@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+class QuadraticEquation
+{
+
+	public void calculateDiscriminantAndRoots()
+	{
+		System.out.println("Enter value of a:");
+//		collect 2.5 ==> nextDouble()
+		double a = new Scanner(System.in).nextDouble();
+		
+		System.out.println("Enter value of b:");
+		double b = new Scanner(System.in).nextDouble();
+		
+		System.out.println("Enter value of c:");
+		double c = new Scanner(System.in).nextDouble();
+		
+		
+		double D = (b * b) - (4 * a * c);
+		
+		if(D > 0) {
+			double Root1 = (-b + Math.sqrt(D)) / (2 * a);
+			double Root2 = (-b - Math.sqrt(D)) / (2 * a);
+			System.out.println(Root1);
+			System.out.println(Root2);
+		}
+		else if(D == 0) {
+			
+			double Root = -b / 2 * a;
+			System.out.println(Root);
+		}
+		else if(D < 0) {
+			double RealPart = (-b / 2 * a);
+			double ImaginaryPart = Math.sqrt(-D) / (2 * a);
+			System.out.println(RealPart);
+			System.out.println(ImaginaryPart);
+		}
+	}
+	
+
+}
+
+public class Maths {
+
+	public static void main(String[] args) {
+	
+		new QuadraticEquation().calculateDiscriminantAndRoots();
+	}
+
+}
