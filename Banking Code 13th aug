@@ -1,0 +1,85 @@
+import java.util.Scanner;
+
+
+class BankAccount
+{
+	
+	double enteredInititalBalance;
+	
+	public void deposit()
+	{
+		System.out.println("Enter the amount to be deposited:");
+		double enteredAmount = new Scanner(System.in).nextDouble();
+
+		if(enteredAmount > 0)
+		{
+			double totalBalance = enteredInititalBalance + enteredAmount;
+			System.out.println(totalBalance);
+		}
+		
+	}
+	
+	public void account()
+	{
+		System.out.println("Enter your name:");
+		String enteredName = new Scanner(System.in).nextLine();
+		
+		System.out.println("Enter your age:");
+		byte enteredAge = new Scanner(System.in).nextByte();
+		
+		System.out.println("Enter your mobile no:");
+		int enteredMobileNo = new Scanner(System.in).nextInt();
+		
+		System.out.println("Enter your aadhar no:");
+		int enteredAadharNo = new Scanner(System.in).nextInt();
+		
+		System.out.println("Enter your city:");
+		String enteredCity = new Scanner(System.in).nextLine();
+		
+		System.out.println("Enter the initial amount for deposit:");
+		enteredInititalBalance = new Scanner(System.in).nextDouble();
+		
+		System.out.println("Account creation successfull!");
+	}
+	
+	public void bankAccountCreation()
+	{
+		System.out.println("Welcome to Kotak Mahindra Bank!");
+		
+		System.out.println("Which type of account you want"
+				+ "?type s-saving account OR c-current account");
+		
+		String optionChoosen = 
+				new Scanner(System.in).nextLine().toLowerCase();//collect string data
+		
+		if(optionChoosen.equals("s"))
+		{
+//			logic for creating savings account
+			account();
+				
+		}
+		else if(optionChoosen.equals("c"))
+		{
+//			logic for creating current account
+			account();
+			
+		}
+		else
+		{
+//			logic to handle that wrong input
+		}
+	}
+}
+
+
+public class BankingApp {
+	public static void main(String[] args) {
+		
+//		new BankAccount().bankAccountCreation();//initalBal = 10000
+//		new BankAccount().deposit();
+		
+		BankAccount ba = new BankAccount();
+		ba.bankAccountCreation();
+		ba.deposit();
+	}
+}
