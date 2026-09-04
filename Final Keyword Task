@@ -1,0 +1,140 @@
+ ⭐ Challenge
+
+For each task, identify:
+
+ 1 `final` variable
+ 1 `final` method
+ 1 variable that should NOT be `final`
+ 1 method that should NOT be `final`
+
+Then write the complete Java code.
+
+
+ 1. 🏦 Bank Account
+
+Create `BankAccount`.
+
+ `accountNumber` should never change.
+ `balance` can change.
+ `deposit()` can be used by subclasses.
+ Create `SavingsAccount` and override `withdraw()`.
+
+Decide: Which variable/method should be `final`?
+
+---
+
+ 2. 🚗 Car
+
+Create `Car`.
+
+ `registrationNumber` cannot change.
+ `speed` can change.
+ `startEngine()` should not be changed by subclasses.
+ `changeSpeed()` can be overridden by `SportsCar`.
+
+Decide: Where should you use `final`?
+
+---
+
+ 3. 🏠 House
+
+Create `House`.
+
+ `houseNumber` cannot change.
+ `ownerName` can change.
+ `openDoor()` should always work the same way.
+ `calculateRent()` can be different for `Apartment` and `Villa`.
+
+Decide: Which variable/method should be `final`?
+
+---
+
+ 4. 📱 Mobile Phone
+
+Create `MobilePhone`.
+
+ `IMEINumber` cannot change.
+ `phoneNumber` can change.
+ `call()` should not be overridden.
+ `display()` can be customized by `SmartPhone`.
+
+Decide: Where should you use `final`?
+
+---
+
+ 5. 👨‍🎓 Student
+
+Create `Student`.
+
+ `rollNumber` cannot change.
+ `name` can change.
+ `displayStudentDetails()` should not be overridden.
+ `calculateMarks()` can be overridden by `EngineeringStudent`.
+
+Decide: Which variable/method should be `final`?
+
+---
+
+ 6. 🏥 Hospital
+
+Create `Patient`.
+
+ `patientId` cannot change.
+ `patientName` can change.
+ `admitPatient()` should not be overridden.
+ `calculateBill()` can be different for `GeneralPatient` and `EmergencyPatient`.
+
+Decide: Where should you use `final`?
+
+---
+
+ 7. 💳 Credit Card
+
+Create `CreditCard`.
+
+ `cardNumber` cannot change.
+ `creditLimit` can change.
+ `activateCard()` should not be overridden.
+ `calculateCharges()` can be different for different card types.
+
+Decide: Which variable/method should be `final`?
+
+---
+
+ 8. 📦 Product
+
+Create `Product`.
+
+ `productId` cannot change.
+ `price` can change.
+ `displayProduct()` should not be overridden.
+ `calculateDiscount()` can be overridden by `ElectronicProduct`.
+
+Decide: Where should you use `final`?
+
+---
+
+ 9. ✈️ Flight
+
+Create `Flight`.
+
+ `flightNumber` cannot change.
+ `ticketPrice` can change.
+ `checkIn()` should not be overridden.
+ `calculateFare()` can be different for `DomesticFlight` and `InternationalFlight`.
+
+Decide: Which variable/method should be `final`?
+
+---
+
+ 10. 🛒 Shopping Product
+
+Create `ShoppingProduct`.
+
+ `productCode` cannot change.
+ `price` can change.
+ `displayProductCode()` should not be overridden.
+ `calculateDiscount()` can be overridden by `MobileProduct`.
+
+Decide: Where should you use `final`?
+
